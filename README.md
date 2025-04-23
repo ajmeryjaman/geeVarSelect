@@ -1,5 +1,5 @@
 # geeVarSelect
-#### This repository contains code to perform variable selection when analyzing correlated continuous outcomes with generalized estimating equations (GEE) using the boosting algorithm or the penalization approach. The goal is to reproduce one key result of the paper ["EEBoost: A General Method for Prediction and Variable Selection Based on Estimating Equations"](https://www.tandfonline.com/doi/abs/10.1198/jasa.2011.tm10098) published in JASA in 2011.
+#### This repository contains code to perform variable selection when analyzing correlated continuous outcomes with generalized estimating equations (GEE) using the boosting algorithm or the penalization approach. The goal is to reproduce one key result of the paper ["EEBoost: A General Method for Prediction and Variable Selection Based on Estimating Equations"](https://www.tandfonline.com/doi/abs/10.1198/jasa.2011.tm10098) by Wolfson (2011, JASA).
 
 The repository contains the following folders:
 
