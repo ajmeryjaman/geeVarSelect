@@ -7,9 +7,10 @@ Folder | Description
 --- | ---
 src | This folder includes all ".R" files containing the source codes.
 data | This folder includes "seeds.Rdata" file which is used in simulations.
+results | This folder includes ".csv" format results files.
 docs | This folder includes all ".Rd" format documentation files.
 
-The src folder contains the following files:
+The src folder contains the following code files:
 
 File | Description
 --- | ---
