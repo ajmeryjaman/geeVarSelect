@@ -64,8 +64,9 @@ summaryFN <- function(out, alpha.true){
               res.sensitivityEE=res.sensitivityEE, res.specificityEE=res.specificityEE))
 }
 
+## "out_rho*.Rdata" files are big, hence were not uploaded in results folder.
 rm(out)
-load("results/out_rho0.Rdata")
+load("results/out_rho0.Rdata") 
 apply(out[[100]]$all.output$path.EEboost[[1]], 1, function(x) sum(abs(x)))
 res0 <- summaryFN(out = out, alpha.true = 0)
 
@@ -101,14 +102,18 @@ sens_spec <- unlist(lapply(res09, function(x) lapply(x, function(xx) median(xx))
 sens <- rbind(sens, sens_spec[c(1,2,5,6,9,10)])
 spec <- rbind(spec, sens_spec[c(3,4,7,8,11,12)])
 
-
-colnames(sens) <- c("IN.EE", "IN.PE", "EF.EE", "EF.PE", "EE.EE", "EE.PE")
-colnames(spec) <- c("IN.EE", "IN.PE", "EF.EE", "EF.PE", "EE.EE", "EE.PE")
+colnames(sens) <- c("Indep.EEBoost", "Indep.Penalized", "ExchFixed.EEBoost",
+                    "ExchFixed.Penalized", "ExchEstimated.EEBoost", "ExchEstimated.Penalized")
+colnames(spec) <- c("Indep.EEBoost", "Indep.Penalized", "ExchFixed.EEBoost",
+                    "ExchFixed.Penalized", "ExchEstimated.EEBoost", "ExchEstimated.Penalized")
 
 # my results
 round(sens, 2)
 round(spec, 2)
 
+write.csv(round(sens, 2), "results/sensitivity.csv", row.names = FALSE)
+write.csv(round(spec, 2), "results/specificity.csv", row.names = FALSE)
+                                                    
 # original results
 sens.p <- cbind(rep(0.55, 4), c(0.85, 0.8, 0.75, 0.8), c(0.55, 0.55, 0.65, 0.75),
                 c(0.85, 0.8, 0.8, 0.85), c(0.55, 0.55, 0.60, 0.75), c(0.85, 0.8, 0.8, 0.8))
