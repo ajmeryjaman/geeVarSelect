@@ -5,9 +5,9 @@ The repository contains the following folders:
 
 Folder | Description
 --- | ---
-src | Includes all .R files containing the source codes
-data | Includes the seeds.Rdata
-docs | Includes all .Rd documentation files
+src | This folder includes all ".R" files containing the source codes.
+data | This folder includes "seeds.Rdata" file which is used in simulations.
+docs | This folder includes all ".Rd" format documentation files.
 
 The src folder contains the following files:
 
