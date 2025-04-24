@@ -20,7 +20,7 @@ File | Description
 [runSim_all.R](https://github.com/ajmeryjaman/geeVarSelect/blob/main/src/runSim_all.R) | This file runs independent simulations under different setting and saves the results.
 [table2.R](https://github.com/ajmeryjaman/geeVarSelect/blob/main/src/table2.R) | This file loads the saved results, calculates the performance metrics and creates the output table.
 
-To reproduce Table 2 of the JASA paper, first we need to run the file [runSim_all.R](https://github.com/ajmeryjaman/geeVarSelect/blob/main/src/runSim_all.R); this will create four results file of .Rdata format. Execution of this file requires time. To create the final output, i.e. Table  2, we need to run [table2.R](https://github.com/ajmeryjaman/geeVarSelect/blob/main/src/table2.R).
+To reproduce Table 2 of the JASA paper, first we need to run the file [runSim_all.R](https://github.com/ajmeryjaman/geeVarSelect/blob/main/src/runSim_all.R); this will create four ".Rdata" format files containing the results. Execution of [runSim_all.R](https://github.com/ajmeryjaman/geeVarSelect/blob/main/src/runSim_all.R) requires time. To create the final output, i.e. Table  2, we need to run [table2.R](https://github.com/ajmeryjaman/geeVarSelect/blob/main/src/table2.R).
 
 
 
